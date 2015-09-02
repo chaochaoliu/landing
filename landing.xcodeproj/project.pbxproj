@@ -7,15 +7,56 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40A80E251B67FA510015A4CA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A80E241B67FA510015A4CA /* LoginViewController.swift */; };
+		40A80E351B6951E50015A4CA /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40A80E2E1B6951D40015A4CA /* Alamofire.framework */; };
+		40A80E361B6951E50015A4CA /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 40A80E2E1B6951D40015A4CA /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		40A80E3C1B6954650015A4CA /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A80E3B1B6954650015A4CA /* NetworkManager.swift */; };
+		40A80E3E1B6969A20015A4CA /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A80E3D1B6969A20015A4CA /* SwiftyJSON.swift */; };
 		40AA96841B66F29400FFC858 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AA96831B66F29400FFC858 /* AppDelegate.swift */; };
-		40AA96861B66F29400FFC858 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AA96851B66F29400FFC858 /* ViewController.swift */; };
+		40AA96861B66F29400FFC858 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AA96851B66F29400FFC858 /* LandingViewController.swift */; };
 		40AA96891B66F29400FFC858 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40AA96871B66F29400FFC858 /* Main.storyboard */; };
 		40AA968B1B66F29400FFC858 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40AA968A1B66F29400FFC858 /* Images.xcassets */; };
 		40AA968E1B66F29400FFC858 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40AA968C1B66F29400FFC858 /* LaunchScreen.xib */; };
 		40AA969A1B66F29500FFC858 /* landingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AA96991B66F29500FFC858 /* landingTests.swift */; };
+		40EECF141B86904D00D1FF87 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EECF131B86904D00D1FF87 /* SignupViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		40A80E2D1B6951D40015A4CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40A80E261B6951D40015A4CA /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		40A80E2F1B6951D40015A4CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40A80E261B6951D40015A4CA /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire OSX";
+		};
+		40A80E311B6951D40015A4CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40A80E261B6951D40015A4CA /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		40A80E331B6951D40015A4CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40A80E261B6951D40015A4CA /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire OSX Tests";
+		};
+		40A80E371B6951E50015A4CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40A80E261B6951D40015A4CA /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
 		40AA96941B66F29500FFC858 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 40AA96761B66F29400FFC858 /* Project object */;
@@ -25,17 +66,36 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		40A80E391B6951E50015A4CA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				40A80E361B6951E50015A4CA /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		40A80E241B67FA510015A4CA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		40A80E261B6951D40015A4CA /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "../../Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
+		40A80E3B1B6954650015A4CA /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		40A80E3D1B6969A20015A4CA /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		40AA967E1B66F29400FFC858 /* landing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = landing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40AA96821B66F29400FFC858 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40AA96831B66F29400FFC858 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		40AA96851B66F29400FFC858 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		40AA96851B66F29400FFC858 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		40AA96881B66F29400FFC858 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		40AA968A1B66F29400FFC858 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		40AA968D1B66F29400FFC858 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		40AA96931B66F29500FFC858 /* landingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = landingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		40AA96981B66F29500FFC858 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40AA96991B66F29500FFC858 /* landingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = landingTests.swift; sourceTree = "<group>"; };
+		40EECF131B86904D00D1FF87 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40A80E351B6951E50015A4CA /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +117,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		40A80E271B6951D40015A4CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40A80E2E1B6951D40015A4CA /* Alamofire.framework */,
+				40A80E301B6951D40015A4CA /* Alamofire.framework */,
+				40A80E321B6951D40015A4CA /* Alamofire iOS Tests.xctest */,
+				40A80E341B6951D40015A4CA /* Alamofire OSX Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		40A80E3A1B6954410015A4CA /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				40A80E3D1B6969A20015A4CA /* SwiftyJSON.swift */,
+				40A80E3B1B6954650015A4CA /* NetworkManager.swift */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
 		40AA96751B66F29400FFC858 = {
 			isa = PBXGroup;
 			children = (
@@ -77,11 +158,11 @@
 		40AA96801B66F29400FFC858 /* landing */ = {
 			isa = PBXGroup;
 			children = (
-				40AA96831B66F29400FFC858 /* AppDelegate.swift */,
-				40AA96851B66F29400FFC858 /* ViewController.swift */,
-				40AA96871B66F29400FFC858 /* Main.storyboard */,
+				40A80E3A1B6954410015A4CA /* Library */,
+				40A80E261B6951D40015A4CA /* Alamofire.xcodeproj */,
+				40AA96A31B66F2F800FFC858 /* Controllers */,
 				40AA968A1B66F29400FFC858 /* Images.xcassets */,
-				40AA968C1B66F29400FFC858 /* LaunchScreen.xib */,
+				40AA96A41B66F31D00FFC858 /* Storyboards */,
 				40AA96811B66F29400FFC858 /* Supporting Files */,
 			);
 			path = landing;
@@ -90,6 +171,7 @@
 		40AA96811B66F29400FFC858 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				40AA96831B66F29400FFC858 /* AppDelegate.swift */,
 				40AA96821B66F29400FFC858 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -112,6 +194,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		40AA96A31B66F2F800FFC858 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				40AA96851B66F29400FFC858 /* LandingViewController.swift */,
+				40A80E241B67FA510015A4CA /* LoginViewController.swift */,
+				40EECF131B86904D00D1FF87 /* SignupViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		40AA96A41B66F31D00FFC858 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				40AA96871B66F29400FFC858 /* Main.storyboard */,
+				40AA968C1B66F29400FFC858 /* LaunchScreen.xib */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +223,12 @@
 				40AA967A1B66F29400FFC858 /* Sources */,
 				40AA967B1B66F29400FFC858 /* Frameworks */,
 				40AA967C1B66F29400FFC858 /* Resources */,
+				40A80E391B6951E50015A4CA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				40A80E381B6951E50015A4CA /* PBXTargetDependency */,
 			);
 			name = landing;
 			productName = landing;
@@ -179,6 +282,12 @@
 			mainGroup = 40AA96751B66F29400FFC858;
 			productRefGroup = 40AA967F1B66F29400FFC858 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 40A80E271B6951D40015A4CA /* Products */;
+					ProjectRef = 40A80E261B6951D40015A4CA /* Alamofire.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				40AA967D1B66F29400FFC858 /* landing */,
@@ -186,6 +295,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		40A80E2E1B6951D40015A4CA /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 40A80E2D1B6951D40015A4CA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		40A80E301B6951D40015A4CA /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 40A80E2F1B6951D40015A4CA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		40A80E321B6951D40015A4CA /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = 40A80E311B6951D40015A4CA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		40A80E341B6951D40015A4CA /* Alamofire OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire OSX Tests.xctest";
+			remoteRef = 40A80E331B6951D40015A4CA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		40AA967C1B66F29400FFC858 /* Resources */ = {
@@ -212,7 +352,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40AA96861B66F29400FFC858 /* ViewController.swift in Sources */,
+				40A80E3C1B6954650015A4CA /* NetworkManager.swift in Sources */,
+				40EECF141B86904D00D1FF87 /* SignupViewController.swift in Sources */,
+				40A80E251B67FA510015A4CA /* LoginViewController.swift in Sources */,
+				40AA96861B66F29400FFC858 /* LandingViewController.swift in Sources */,
+				40A80E3E1B6969A20015A4CA /* SwiftyJSON.swift in Sources */,
 				40AA96841B66F29400FFC858 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,6 +372,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		40A80E381B6951E50015A4CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = 40A80E371B6951E50015A4CA /* PBXContainerItemProxy */;
+		};
 		40AA96951B66F29500FFC858 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 40AA967D1B66F29400FFC858 /* landing */;
@@ -409,6 +558,7 @@
 				40AA969F1B66F29500FFC858 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		40AA96A01B66F29500FFC858 /* Build configuration list for PBXNativeTarget "landingTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +567,7 @@
 				40AA96A21B66F29500FFC858 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
